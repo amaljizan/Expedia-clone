@@ -533,7 +533,7 @@ audio, canvas, iframe, img, svg, video {
 }
 
 
-/* .main-blue{
+.main-blue{
     padding-inline: 24px;
     padding-block: 16px;
 }
@@ -584,7 +584,7 @@ audio, canvas, iframe, img, svg, video {
     white-space: pre-line;
     color: #fff;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 21px;
     min-inline-size: 24px;
 }
 .blue-sign{
@@ -594,6 +594,7 @@ audio, canvas, iframe, img, svg, video {
     flex-direction: column;
 }
 .sign-btn{
+
     font-family: 'medium';
     font-size: .75rem;
     line-height: 1rem;
@@ -614,9 +615,9 @@ audio, canvas, iframe, img, svg, video {
     cursor: pointer;
     display: inline-flex;
     flex-wrap: nowrap;
-    font-weight: 500;
     justify-content: center;
     text-shadow: none;
+    border: none;
 }
 .sign-btn::before{
     block-size: 100%;
@@ -641,70 +642,129 @@ audio, canvas, iframe, img, svg, video {
     inset-inline-start: 0;
     position: absolute;
 
-} */
-.main-blue {
-    padding: 16px 24px;
-  }
-  
-  .blue-card {
-    background: #191e3b;
-    border-radius: 1rem;
-    padding: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .blue-row {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .blue-img {
-    width: 48px;
-    height: 48px;
-  }
-  
-  .blue-text {
-    color: white;
+}
+.main-large-background {
+    padding-inline: 24px;
+    padding-block: 16px;
+}
+
+.main-building-grid {
+    display: grid;
+    block-size: 100%;
+    grid-auto-columns: minmax(0px, 1fr);
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.building-grid {
+    grid-column-start: span 1;
+}
+
+.building-card{
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.building-theme{
+    aspect-ratio: 4 / 3;
+    block-size: 100%;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    inline-size: 100%;
+    overflow: hidden;
+    place-self: stretch;
+    content-visibility: auto;
+}
+.building-city-image {
+    block-size: 100%;
+    inline-size: 100%;
+    inset: 0;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s;
+    object-fit: cover;
+}
+
+.building-sale{
+    align-self: center;
+    grid-column-start:span 1;
+}
+
+.sale-content{
+    height: 100%;
+    display: grid;
+    background-color: #fddb32;
+    padding-inline: 24px;
+    padding-block: 24px;
+    block-size: 100%;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    grid-template-columns:repeat(1, minmax(0, 1fr));
+    grid-auto-columns:minmax(0px, 1fr);
+}
+.building-head-sale{
+    grid-column-start: span 1;
+}
+
+.building-head{
+    font-weight: 400;
+    /* font-size: 24px; */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: 28px;
+    line-height: 32px;
+    font-family: 'regular';
+    letter-spacing: 0px;
+    margin: 0;
+    color: #0c0e1c;
+}
+.building-pg-sale{
+    grid-column-start: span 1;
+}
+.building-pg{
+    font-family: 'book';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    font-family: 'medium';
-  }
-  
-  .sign-btn {
-    padding: 0.25rem 0.75rem;
-    border-radius: 999px;
-    border: none;
-    color: white;
-    background-color: #1668e3;
-    font-weight: 500;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    width: 100%;
-    cursor: pointer;
+    font-weight :400;
+    line-height :20px;
+    margin: 0;
+    color: #0c0e1c;
+    font-synthesis: style;
+    min-inline-size: 20px;
+    opacity: 1;
+}
+.building-card-button{
+    grid-column-start: span 1;
+    padding-block-start: 12px;
+    
+}
+.sale-button {
+    height: 100%;
+    gap: 8px;
+    background-color: #000;
+    color: #fff;
     position: relative;
     z-index: 0;
-  }
-  
-  .sign-btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #0e3672;
-    opacity: 0;
-    z-index: -1;
-    border-radius: 999px;
-  }
-  
-  .sign-btn::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #1668e3;
-    z-index: -2;
-    border-radius: 999px;
-  }
-  
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    min-block-size: 3rem;
+    padding-block:0.25rem;
+    padding-inline: 1rem;
+    align-items: center;
+    border-radius: 2500rem;
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    font-weight: 500;
+    justify-content: center;
+    text-shadow: none;
+    font-family: 'medium';
+}
