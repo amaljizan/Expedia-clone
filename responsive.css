@@ -311,6 +311,8 @@
     .sale-content{
         grid-column-start: span 3;
         border-radius: 1rem;
+        padding-right: 16px;
+        padding-left: 24px;
     }
     .building-head{
         font-size: 36px;
@@ -470,6 +472,17 @@
         align-items: center;
         padding-block-start: unset;
         flex-direction: row;
+    }
+    .building-sale{
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        inset-block-start: auto;
+        inset-inline-start: 48px;
+        inset-inline-end: auto;
+        inset-block-end: 48px;
+        transform:none;
+    }
+    .sale-content{
+        grid-column-start: span 2;
     }
 
 }
