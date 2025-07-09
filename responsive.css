@@ -145,13 +145,13 @@
 
     }
 
-    .select-text-where {
+    /* .select-text-where {
         margin-inline-start: 2.75rem;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         margin-left: 12px;
-    }
+    } */
 
     .select-gap {
         margin-block-start: unset;
@@ -335,9 +335,21 @@
 }
 @media (min-width:624px) {
     .deal-card{
-       inline-size:calc(100% - 16px * 2 - 16px / 2); 
+        height: 100%;
+        width: 44%;
+        /* inline-size:calc(100% - 16px * 2 - 16px / 2); */
+    }
+    .deal-grid{
+        display: flex;
+    }
+    .deal-text{
+        width: 100%;
+    }
+    .deal-content{
+        max-height: 80px;
     }
 }
+
 @media (min-width:768px) {
     .tabs-under {
         transform: translateX(119px) scaleY(1) scaleX(1);
