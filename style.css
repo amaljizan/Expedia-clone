@@ -1546,6 +1546,9 @@ audio, canvas, iframe, img, svg, video {
 .sea-head-text{
     color: #fff;
     font-weight: 500;
+    font-family: 'medium';
+    line-height: 24px;
+    font-size: 20px;
 }
 .sea-dates{
     background: #0c0e1c;
