@@ -431,6 +431,9 @@
     .key-shape-grid{
         grid-template-columns: 256px auto;
     }
+    .key-grid-img{
+        grid-auto-rows: 164px;
+    }
     .key-content{
         padding-inline-start: 24px;
         margin-inline-start: 24px;
@@ -443,13 +446,100 @@
     }
     .key-pg{
         font-size: 14px;
+        line-height: 18px;
     }
     .key-black-grid {
         grid-auto-columns: 72px;
         left: 256px;
         grid-auto-rows: 116px;
     }
-
+    .sea-grid{
+        grid-template-rows: minmax(auto, 6.25cqi) max-content;
+    }
+    .sea-head-text{
+        line-height: 32px;
+        font-size: 28px;
+    }
+    .sea-gap{
+        grid-template-columns: 1fr 1fr 1fr auto auto auto;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        grid-template-rows: repeat(1, minmax(0, 1fr));
+    }
+    .sea-shape{
+        padding-inline: 32px;
+        padding-block-start: 32px;
+    }
+    .stars-inline:first-child{
+        margin-inline-start: 32px;
+    }
+    .stars-inline{
+        inline-size: calc((100% - 16px * (2) - 48px) / 2);
+    }
+    .see-deal{
+        grid-column-start:4;
+        grid-column-end: 7;
+        align-items: center;
+        display: flex;
+    }
+    .see-inside{
+        background-color: #fff;
+        color: #1668e3;
+        position: relative;
+        z-index: 0;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        min-block-size: 2.25rem;
+        padding-block: 4px;
+        padding-inline: 16px;
+        align-items: center;
+        border-radius: 2500rem;
+        border-style: solid;
+        border-width: 0;
+        cursor: pointer;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        font-weight: 500;
+        justify-content: center;
+        text-decoration: none
+    }
+    .see-inside::before{
+        opacity: 0;
+        block-size: 100%;
+        border-radius: 2500rem;
+        content: "";
+        inline-size: 100%;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        position: absolute;
+        background-color: #1668e3;
+        z-index: -1;
+    }
+    .see-deal-text{
+        gap: 4px;
+        display: inline-flex;
+        font-family: 'medium';
+        
+    }
+    .stars-resort-text {
+        min-height: 3rem;
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+        white-space: normal;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+    }
+    .stars-all{
+        padding-block-end: 32px;
+    }
+    .main-sea {
+        max-width: 61.938rem;
+    }
 
 }
 @media (min-width: 613px) {
@@ -656,6 +746,37 @@
         inline-size: calc((100% - 16px * (5 - 1)) / 5);
 
     }
+    .stars-inline{
+        inline-size: calc((100% - 16px * (4) - 80px) / 4);
+    }
+    .stars-inline:first-child{
+        margin-inline-start: 48px;
+    }
+    .sea-shape {
+        padding-inline: 48px;
+        padding-block-start: 48px;
+    }
+    .stars-all{
+        padding-block-start: .75rem;
+        padding-block-end: 3rem;
+    }
+    .main-sea {
+        max-width: 78rem;
+    }
+    .key-shape-grid{
+        grid-template-columns: 428px auto;
+    }
+    .key-black-grid{
+        left: 426px;
+    }
+    .key-content{
+        padding-inline-start: 26px;
+        margin-inline-start: 26px;
+    }
+    .key-pg{
+        line-height: 19px;
+    }
+    
 }
 
 @media (min-width:1040px) {
