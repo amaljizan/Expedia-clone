@@ -274,21 +274,6 @@ audio, canvas, iframe, img, svg, video {
     overflow: hidden;
     position: relative;
 }
-/* .select-text-where{
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-    transform: translateY(50%);
-    margin-inline-start: 2.75rem;
-    max-inline-size: calc(100% - 4.25rem);
-    inset-block-start: calc(50% - 1.25rem);
-    margin-block: 0;
-    margin-inline: .75rem;
-    position: absolute;
-    left: 32px;
-    font-family: 'book';
-    color: #191e3b;
-} */
 .select-float-text{
     max-inline-size: calc(100% - 4.25rem);
     inset-block-start: calc(50% - 1.25rem);
@@ -304,7 +289,6 @@ audio, canvas, iframe, img, svg, video {
     position: absolute;
     text-overflow: ellipsis;
     transform-origin: left top;
-    transition: all .1s ease-in-out;
     white-space: nowrap;
     font-family: 'book';
 }
@@ -487,7 +471,6 @@ audio, canvas, iframe, img, svg, video {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    opacity: 1;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -683,8 +666,6 @@ audio, canvas, iframe, img, svg, video {
     inline-size: 100%;
     inset: 0;
     position: absolute;
-    opacity: 1;
-    transition: opacity 1s;
     object-fit: cover;
 }
 
@@ -711,7 +692,6 @@ audio, canvas, iframe, img, svg, video {
 
 .building-head{
     font-weight: 400;
-    /* font-size: 24px; */
     overflow-wrap: break-word;
     word-break: break-word;
     font-size: 28px;
@@ -736,7 +716,6 @@ audio, canvas, iframe, img, svg, video {
     color: #0c0e1c;
     font-synthesis: style;
     min-inline-size: 20px;
-    opacity: 1;
 }
 .building-card-button{
     grid-column-start: span 1;
@@ -784,7 +763,6 @@ audio, canvas, iframe, img, svg, video {
 .deal-card{
     inline-size:calc(100% - 16px * 1 - 16px / 1); 
     flex-shrink: 0;
-    transform: translateZ(0);
     block-size: 100%;
     display: grid;
     grid-auto-columns: minmax(0px, 1fr);
@@ -819,7 +797,6 @@ audio, canvas, iframe, img, svg, video {
     white-space: normal;
     color: #0c0e1c;
     font-synthesis: style;
-    opacity: 1;
     font-size: 16px;
     line-height: 1.25rem;
     min-inline-size: 24px;
@@ -836,7 +813,6 @@ audio, canvas, iframe, img, svg, video {
     font-weight: 400;
     color: #0c0e1c;
     font-synthesis: style;
-    opacity: 1;
     font-size: 0.75rem;
     line-height: 1rem;
 }
@@ -871,8 +847,6 @@ audio, canvas, iframe, img, svg, video {
     inset: 0;
     position: absolute;
     object-fit: cover;
-    opacity: 1;
-    transition: opacity 1s;
     block-size: 100%;
     inline-size: 100%;
 }
@@ -889,7 +863,7 @@ audio, canvas, iframe, img, svg, video {
     color: #191e3b;
     font-size: 20px;
     line-height: 24px;
-    font-family:'bold'bold''bold'';
+    font-family:'medium';
 }
 .offer-dates{
     margin-block-start: 6px;
@@ -931,7 +905,6 @@ audio, canvas, iframe, img, svg, video {
     inline-size: 100%;
     list-style: none;
     max-block-size: 100%;
-    opacity: 1;
     overflow-x: scroll;
     position: relative;
     gap: 16px;
@@ -941,7 +914,6 @@ audio, canvas, iframe, img, svg, video {
 .package-offer{
     inline-size: calc(100% - 16px * 1 - 48px / 1);
     flex-shrink: 0;
-    transform: translateZ(0);
     overflow: hidden;
     padding-block-end: 12px;
     border-radius: 16px;
@@ -970,8 +942,6 @@ audio, canvas, iframe, img, svg, video {
     inline-size: 100%;
     inset: 0;
     position: absolute;
-    opacity: 1;
-    transition: opacity 1s;
     object-fit: cover;
     border-radius: 16px;
 }
@@ -1069,7 +1039,6 @@ audio, canvas, iframe, img, svg, video {
 .package-quality{
     font-weight: 500;
     color: #191e3b;
-    opacity: 1;
     font-size: 14px;
     line-height: 18px;
     min-inline-size: calc(4px + 1.125rem);
@@ -1078,7 +1047,6 @@ audio, canvas, iframe, img, svg, video {
 .package-reviews-txt{
     font-weight: 400;
     color: #191e3b;
-    opacity: 1;
     line-height: 16px;
     font-size: 12px;
     font-family: 'book';
@@ -1096,7 +1064,7 @@ audio, canvas, iframe, img, svg, video {
     color: #191e3b;
     line-height: 20px;
     font-size: 16px;
-    font-family: 'bold';
+    font-family: 'medium';
     margin-block-start: 4px;
 }
 .package-txt-place{
@@ -1173,7 +1141,6 @@ audio, canvas, iframe, img, svg, video {
     font-weight: 400;
     text-align: start;
     color: #191e3b;
-    opacity: 1;
     font-size: 12px;
     line-height: 16px;
     font-family: 'book';
@@ -1193,7 +1160,6 @@ audio, canvas, iframe, img, svg, video {
 .package-text-day{
     font-weight: 500;
     color: #191e3b;
-    opacity: 1;
     font-size: 20px;
     line-height: 24px;
     font-family: 'medium';
@@ -1244,7 +1210,6 @@ audio, canvas, iframe, img, svg, video {
     font-size: 14px;
     line-height: 18px;
     color: #191e3b;
-    opacity: 1;
     min-inline-size: calc(4px + 1.125rem);
     font-family: 'book';
 }
@@ -1263,7 +1228,6 @@ audio, canvas, iframe, img, svg, video {
     font-size: 12px;
     line-height: 16px;
     color: #191e3b;
-    opacity: 1;
     font-family: 'book';
 }
 .see-more-b{
@@ -1328,7 +1292,7 @@ audio, canvas, iframe, img, svg, video {
 }
 .recent-text{
     font-weight: 500;
-    font-family: 'bold';
+    font-family: 'medium';
     color: #191e3b;
     font-size: 20px;
     line-height: 24px;
@@ -1353,7 +1317,6 @@ audio, canvas, iframe, img, svg, video {
     inline-size: 100%;
     list-style: none;
     max-block-size: 100%;
-    opacity: 1;
     overflow-x: scroll;
     position: relative;
 }
@@ -1416,7 +1379,6 @@ audio, canvas, iframe, img, svg, video {
     font-weight: 700;
     white-space: normal;
     color: #191e3b;
-    opacity: 1;
     font-size: 16px;
     line-height: 20px;
     min-inline-size: calc(4px + 1.25rem);
@@ -1428,7 +1390,6 @@ audio, canvas, iframe, img, svg, video {
     font-weight: 400;
     white-space: normal;
     color: #191e3b;
-    opacity: 1;
     font-size: 14px;
     line-height: 28px;
     min-inline-size: calc(4px + 1.25rem);
@@ -1440,7 +1401,6 @@ audio, canvas, iframe, img, svg, video {
     font-weight: 400;
     white-space: normal;
     color: #191e3b;
-    opacity: 1;
     font-size: 14px;
     line-height: 18px;
     min-inline-size: calc(4px + 1.25rem);
@@ -1650,7 +1610,6 @@ audio, canvas, iframe, img, svg, video {
 }
 .stars-button{
     transform: translateY(-50%);
-    transition: opacity .2s;
     block-size: 2rem;
     inline-size: 2rem;
     min-block-size: 2rem;
@@ -1782,7 +1741,6 @@ audio, canvas, iframe, img, svg, video {
     font-weight: 400;
     text-align: start;
     color: #fff;
-    opacity: 1;
     font-size: 12px;
     line-height: 16px;
     font-family: 'book';
@@ -1790,7 +1748,6 @@ audio, canvas, iframe, img, svg, video {
 .stars-text-day {
     font-weight: 500;
     color: #fff;
-    opacity: 1;
     font-size: 20px;
     line-height: 24px;
     font-family: 'medium';
@@ -1800,7 +1757,6 @@ audio, canvas, iframe, img, svg, video {
     font-size: 14px;
     line-height: 18px;
     color: #fff;
-    opacity: 1;
     min-inline-size: calc(4px + 1.125rem);
     font-family: 'book';
 }
@@ -1827,7 +1783,6 @@ audio, canvas, iframe, img, svg, video {
     font-size: 12px;
     line-height: 16px;
     color: #fff;
-    opacity: 1;
     font-family: 'book';
 }
 .stars-prices {
@@ -1896,7 +1851,7 @@ audio, canvas, iframe, img, svg, video {
     color: #191e3b;
     font-size: 20px;
     line-height: 24px;
-    font-family: 'bold';
+    font-family: 'medium';
 }
 .sun-container{
     padding-block-start: 16px;
@@ -1923,7 +1878,6 @@ audio, canvas, iframe, img, svg, video {
 .sun-card{
     inline-size: calc((100% - 16px * (2) - 48px) / 2);
     flex-shrink: 0;
-    transform: translateZ(0);
 }
 .sun-shape{
     overflow: hidden;
@@ -2034,7 +1988,7 @@ audio, canvas, iframe, img, svg, video {
     color: #191e3b;
     font-size: 20px;
     line-height: 24px;
-    font-family: 'bold';
+    font-family: 'medium';
 }
 .banner-pg-txt{
     margin-block-start: 12px;
@@ -2129,7 +2083,6 @@ audio, canvas, iframe, img, svg, video {
     inline-size: calc((100% - 16px * (1) - 48px) / 1);
     flex-shrink: 0;
     list-style: none;
-    transform: translateZ(0);
 }
 .moon-flex{
     block-size: 100%;
@@ -2287,7 +2240,7 @@ audio, canvas, iframe, img, svg, video {
     color: #191e3b;
     font-size: 16px;
     line-height: 24px;
-    font-family: 'bold';
+    font-family: 'medium';
     min-inline-size: calc(4px + 1.25rem);
 }
 .key-content-pg{
@@ -2514,7 +2467,7 @@ audio, canvas, iframe, img, svg, video {
     color: #191e3b ;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'bold';
+    font-family: 'medium';
     margin-block-start: 4px;
 }
 .flight-pg{
@@ -2904,7 +2857,7 @@ audio, canvas, iframe, img, svg, video {
     color: #191e3b;
     font-size:20px;
     line-height: 24px;
-    font-family: 'bold';
+    font-family: 'medium';
 }
 .resort-grid{
     padding: unset;
@@ -2992,7 +2945,7 @@ audio, canvas, iframe, img, svg, video {
     color: #191e3b;
     font-size: 20px;
     line-height: 24px;
-    font-family: 'bold';
+    font-family: 'medium';
 }
 .app-pg{
     font-weight: 400;
@@ -3089,7 +3042,7 @@ audio, canvas, iframe, img, svg, video {
     font-size: 14px;
     line-height: 18px;
     padding-block-start: .5rem;
-    font-family: 'bold';
+    font-family: 'medium';
 }
 .about-name{
     margin-block-start: .5rem;

@@ -144,15 +144,6 @@
         z-index: 100;
 
     }
-
-    /* .select-text-where {
-        margin-inline-start: 2.75rem;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        margin-left: 12px;
-    } */
-
     .select-gap {
         margin-block-start: unset;
         padding: 24px;
@@ -239,8 +230,6 @@
         block-size: 100%;
         inset: 0;
         position: absolute;
-        opacity: 1;
-        transition: opacity 1s;
         display: block;
        object-fit: cover;
      }
@@ -946,10 +935,22 @@
     .app-before{
         width: 1190px;
     }
+    .about-container{
+        margin: 0;
+        max-inline-size: unset;
+    }
+    .app-main{
+        padding-inline: 24px;
+    }
+    .about-shape{
+        max-inline-size: 78rem;
+        margin: auto;
+    }
 }
 @media (min-width:1248px) {
     .stay-size {
         inline-size: calc((100% - 16px * (4 - 1)) / 4);
     }
-    
+
+   
 }
